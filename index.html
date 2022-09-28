@@ -6,10 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timer App</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/mdb.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+  <div class="container d-flex justify-content-center align-items-center">
+    <!-- <h3 class="text-center">Timer App</h3> -->
+    <div class="d-flex justify-content-center align-items-center " id="timer-border">
+      <div class="svg text-center">
+        <svg height="500" width="500">
+          <circle r="200" cy="280" cx="280" fill="transparent" stroke="green" stroke-width="20"
+            transform="rotate(-90 280 280)" />
+        </svg>
 
+        <div class="timer">
+          <input type="text" name="timer" class="form-control">
+          <div class="controls text-center d-flex justify-content-center gap-4">
+            <button id="playBtn">
+              <i class="fas fa-play fa-4x"></i>
+            </button>
+            <button id="pauseBtn">
+              <i class="fas fa-pause fa-4x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/timer.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
